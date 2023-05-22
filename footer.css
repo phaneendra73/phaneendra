@@ -1,0 +1,23 @@
+footer {
+  background-color: #222222;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
