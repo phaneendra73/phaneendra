@@ -3,101 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous">
-    <link rel="stylesheet" href="footer.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= , initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="textani.css"> -->
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous">
     <title>Phaneendra - protfoliio</title>
 
 
     <Style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            background-color: black;
-            color: #a9ff1c;
-            font-family: Inter, sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 3rem;
-            background-color: #a9ff1c;
-        }
-
-        nav .left {
-            color: #333333;
-            font-weight: 700;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-
-            list-style: none;
-            margin: 0 2rem;
-        }
-
-        nav ul li a {
-
-            text-decoration: none;
-            color: #333333;
-            font-weight: 700;
-
-
-        }
-
-        nav ul li a:hover {
-
-            font-size: 1.03rem;
-            color: rgb(110, 174, 230);
-
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            margin: 23px 0;
-            align-items: center;
-        }
-
-        .firstsection>div {
-
-            width: 30%;
-
-        }
-
-        .leftsection {
-            font-size: 3rem;
-        }
-
-
-
-        .rightsection img {
-            width: 60%;
-        }
-
-        .pink {
-            color: palevioletred;
-        }
-
-        #element {
-            color: blueviolet;
-        }
     </Style>
 </head>
 
@@ -117,17 +34,30 @@
         </nav>
     </header>
     <main>
-        <section class="firstsection">
-            <div class="leftsection">Hi, my name is <span class="pink">Phaneendra</span>
-                <div>and i am a passionate</div>
-                <div><span id="element"></span></div>
+        <section class="home">
+            <div class="leftsection">Hi, My name is Phaneendra
+                <div class="text-container">& I am a
+                    <span id="text"></span>
+                    <span class="cursor"></span>
+                </div>
+            </div>
             </div>
             <div class="rightsection"><img src="img.png" alt="dev image"></div>
         </section>
+        <section class="About">
+            <p class="abouttext">
+                Hi, I'm Phaneendra Sai I am a passionate web developer with expertise in front-end technologies. My goal
+                is to combine my technical skills
+                with my creativity to deliver outstanding results.I have been working on web development for the past 6
+                months and have a strong grip on my skills.I love creating
+                beautiful and websites that provide a great user experience.
+            </p>
+            <div><a href="./docs/phaniresume.pdf" target="_blank" class="resume">Resume</a></div>
+           
+
+        </section>
         <footer>
             <div class="social-icons">
-
-
                 <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                 <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -136,13 +66,7 @@
             <p>&copy; 2023 Your Name. All rights reserved.</p>
         </footer>
     </main>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['web developer', '&amp; a tech enthusiat.'],
-            typeSpeed: 50,
-        });
-    </script>
 </body>
+<script src="script.js"></script>
 
 </html>
