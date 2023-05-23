@@ -3,13 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+::--webkit-scrollbar {
+    display: none;
+}
 
 body {
   background-color: black;
   color: #a9ff1c;
   font-family: Inter, sans-serif;
+  scroll-behavior: unset;
 }
-
+/* nav bar styles are START here */
 nav {
   display: flex;
   justify-content: space-around;
@@ -48,11 +52,15 @@ nav ul li a:hover {
   font-size: 1.5rem;
 }
 
+/* nav bar styles are END here */
+
+/* home section styles are defined here  */
 .home {
   display: flex;
   justify-content: space-around;
   margin: 23px 0;
   align-items: center;
+  height: 50vh;
 }
 
 .home > div {
@@ -66,19 +74,56 @@ nav ul li a:hover {
 .rightsection img {
   width: 60%;
 }
+/* home section styles are END here  */
+
+/* ABOUT section styles are START here  */
+.about{
+  height: 30vh;
+  text-align: justify;
+  margin: 5px;
+
+}
 .abouttext {
   font-size: larger;
+}
+.center-div {
+  display: flex;
+  place-content: center;
 }
 .resume {
   color: black;
   font-size: larger;
-  width: 250px;
+  width: 150px;
   border-radius: 5%;
   background-color: #a9ff1c;
   text-decoration: none;
   padding: 5px 5px;
-  margin: 100px;
+  margin: 10px;
+  text-align: center;
 }
 .resume:hover {
-  color: black;
+  color: rgb(81, 0, 255);
+  font-size: x-large;
 }
+/* ABOUT section styles are END here  */
+
+/* education section styles START  */
+
+.education{
+ height: 30vh;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* education section styles END  */
+
