@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 ::--webkit-scrollbar {
     display: none;
@@ -124,6 +123,57 @@ td, th {
   text-align: left;
   padding: 8px;
 }
+.skills{
+  height: 20vh;
+  margin-top: 30px;
+}
+.languages {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    margin: 20px;
+}
 
 /* education section styles END  */
+/* projects section styles START  */
+.projects{
+  display: flex;
+ justify-content: space-around;
+  margin: 80px;
+}
+.project{
+  width: 35vw;
+  border: 2px double  #dddd;
+}
+.project img{
+  width: 35vw;
+  height: 35vh;
+  align-items: center;
+  
+}
+.project-des{
+  margin: 1rem;
+  text-align: justify;
+}
 
+.proj-link{
+ color: black;
+  font-size: medium;
+  width: 150px;
+  border-radius: 13px;
+  background-color: #a9ff1c;
+  text-decoration: none;
+  padding: 5px 5px;
+  margin: 10px;
+  text-align: center;
+  transition:  all 1s;
+
+}
+.proj-link:hover{
+  color: #266d7b;
+   border-radius: 0%;
+   
+  
+
+}
+/* projects section styles END  */
