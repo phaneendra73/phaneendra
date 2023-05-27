@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="textani.css"> -->
-    <link rel="stylesheet" href="body.css">
-    <link rel="stylesheet" href="footer.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/textani.css">
+    <link rel="stylesheet" href="./css/body.css">
+        <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous">
-    <title>Phaneendra - protfoliio</title>
+    <title>Phaneendra-portfolio</title>
 
 
-    <Style>
-
-    </Style>
 </head>
 
 <body>
@@ -47,7 +44,19 @@
                 </div>
             </div>
             </div>
-            <div class="rightsection"><img src="img.png" alt="dev image"></div>
+            <div class="rightsection">
+                <img  id="profile-pic" src="./docs/img.png">
+                <h5 style="text-align: left; line-height: 2; color: aqua;">PERSONALIZE THEME</h5>
+                <div id="theme-options-wrapper">
+                    <div data-mode="light" class="theme-dot" id="light-mode"></div>
+                    <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+                    <div data-mode="green" class="theme-dot" id="green-mode"></div>
+                    <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
+                </div>
+            
+                <p id="settings-note">Theme settings will be
+                    saved <br> for your next visit.</p>
+            </div>
         </section>
         <section class="about">
             <p class="abouttext">
