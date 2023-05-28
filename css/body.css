@@ -7,8 +7,8 @@
     --mainColor: #000000;
     --secondaryColor: #a9ff1c;
     --borderColor: #a9ff1c;
-    --mainText: black;
-    --secondaryText: #4b5156;
+    --mainText: #a9ff1c;
+    --secondaryText: #a9ff1c;
     --themeDotBorder: #24292e;
     --previewBg: rgb(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
@@ -25,10 +25,15 @@ strong {
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
 }
+hr{
+  height: 1.5px;
+  background-color: var(--borderColor);
+ border: none;
+}
 
 body {
   background-color: var(--mainColor);
-  color: var(--secondaryColor);
+  color: var(--secondaryText);
   font-family: Inter, sans-serif;
   scroll-behavior: unset;
 }
@@ -158,16 +163,17 @@ nav ul li a:hover {
   color: black;
   font-size: larger;
   width: 150px;
-  border-radius: 5%;
+  border-radius: 13px;
   background-color: var(--buttonColor);
   text-decoration: none;
   padding: 5px 5px;
   margin: 10px;
   text-align: center;
+ transition:  border-radius 1s;
 }
 .resume:hover {
-  color: rgb(81, 0, 255);
-  font-size: x-large;
+  color: #7eeaff;
+  border-radius: 0%;
 }
 /* ABOUT section styles are END here  */
 
@@ -230,7 +236,7 @@ td, th {
   font-size: medium;
   width: 150px;
   border-radius: 13px;
-  background-color: var(--secondaryColor);
+  background-color: var(--buttonColor);
   text-decoration: none;
   padding: 5px 5px;
   margin: 10px;
