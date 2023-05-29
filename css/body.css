@@ -3,6 +3,9 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+section {
+  margin-right: 0%;
+}
 :root {
   --mainColor: #000000;
   --secondaryColor: #a9ff1c;
@@ -11,7 +14,7 @@
   --secondaryText: #a9ff1c;
   --themeDotBorder: #24292e;
   --previewBg: rgba(44, 44, 43, 0.8);
-  --previewShadow: #f0ead6;
+  --previewShadow: #212422;
   --buttonColor: #a9ff1c;
 }
 h1,
@@ -35,7 +38,7 @@ body {
   background-color: var(--mainColor);
   color: var(--secondaryText);
   font-family: Inter, sans-serif;
-  scroll-behavior: unset;
+  scroll-behavior: smooth;
 }
 /* nav bar styles are START here */
 nav {
@@ -81,10 +84,12 @@ nav ul li a:hover {
 /* home section styles are defined here  */
 .home {
   display: flex;
+  background-color: var(--previewShadow);
   justify-content: space-around;
-  margin: 23px 0;
+  margin: 23px 10px;
   align-items: center;
   height: 50vh;
+  border: 2px double var(--borderColor);
 }
 
 .home > div {
@@ -121,10 +126,15 @@ nav ul li a:hover {
   }
 }
 
-
+.rightsection {
+  border: 2px double var(--borderColor);
+}
 .rightsection img {
   width: 60%;
+  margin-top: 5%;
   margin-left: 15%;
+  border-radius: 100px;
+  border: 2px double var(--borderColor);
 }
 /* themes section */
 
@@ -140,15 +150,11 @@ nav ul li a:hover {
 }
 
 .theme-dot {
-  height: 30px;
-  width: 30px;
-  background-color: black;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   margin: 5px;
   border: 2px solid var(--borderColor);
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
 
@@ -235,8 +241,10 @@ th {
 .languages {
   display: flex;
   justify-content: space-evenly;
-  border-radius: 5px;
-  margin: 20px;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 30px;
+  background-color: var(--previewShadow);
 }
 .languages ul li {
   list-style: none;
@@ -246,11 +254,14 @@ th {
 /* projects section styles START  */
 .projects {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 80px;
+  margin-top: 150px;
+  background-color: var(--previewShadow);
 }
 .project {
   width: 35vw;
+  margin-top: 10px;
   border: 2px double var(--borderColor);
 }
 .project img {

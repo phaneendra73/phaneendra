@@ -1,6 +1,10 @@
 // Text changing aimation
 const textElement = document.getElementById("text");
-const phrases = ["Developer ", "Programmer", "Self-Learner"];
+const phrases = [
+  "Developer ",
+  "Programmer",
+  "Self-Learner",
+];
 let currentPhraseIndex = 0;
 let currentCharacterIndex = 0;
 let isDeleting = false;
