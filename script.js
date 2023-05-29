@@ -45,7 +45,7 @@ let theme = localStorage.getItem("theme");
 let themeDots = document.getElementsByClassName("theme-dot");
 
 if (theme == null) {
-  setTheme("body");
+  setTheme("blue");
 } else {
   setTheme(theme);
 }
