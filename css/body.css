@@ -192,6 +192,10 @@ nav ul li a:hover {
   margin: 5px;
 }
 .abouttext {
+  margin: 1.5rem;
+  border-radius: 13px;
+  padding: 10px;
+  background-color: var(--previewShadow);
   font-size: larger;
 }
 .center-div {
@@ -226,6 +230,8 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  font-size: larger;
+  margin: 1rem;
 }
 
 td,
@@ -245,6 +251,7 @@ th {
   padding: 20px;
   margin: 30px;
   background-color: var(--previewShadow);
+  font-size: 1.3rem;
 }
 .languages ul li {
   list-style: none;
@@ -256,7 +263,7 @@ th {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 150px;
+  margin-top: 200px;
   background-color: var(--previewShadow);
 }
 .project {
@@ -308,8 +315,13 @@ footer {
   margin-right: 20px;
   color: var(--buttonColor);
   font-size: 50px;
-
+  border-radius: 10px;
   text-decoration: none;
+  transition: border 1s;
+}
+.social-icons a:hover{
+    border: 2px double var(--borderColor);
+
 }
 
 footer p {
