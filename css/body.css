@@ -29,7 +29,7 @@ strong {
   font-weight: 500;
 }
 hr {
-  height: 1.5px;
+  min-height: 1.5px;
   background-color: var(--borderColor);
   border: none;
 }
@@ -48,7 +48,7 @@ nav {
   align-items: center;
   background-color: var(--secondaryColor);
   border-bottom: 1px solid var(--borderColor);
-  height: 2rem;
+  min-height: 5%;
 }
 .sticky {
   position: fixed;
@@ -57,8 +57,11 @@ nav {
 }
 
 nav .left {
-  color: #000000;
+  color:var(--previewShadow);
+  font-size: 1.5rem;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
@@ -73,18 +76,16 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #000000;
+  color: var(--previewShadow);
   font-weight: 700;
 }
 
 nav ul li a:hover {
   font-size: 1.03rem;
-  color: rgb(110, 174, 230);
+  color: var(--secondaryText);
 }
 
-.left {
-  font-size: 1.5rem;
-}
+
 
 /* nav bar styles are END here */
 
@@ -93,9 +94,9 @@ nav ul li a:hover {
   display: flex;
   background-color: var(--previewShadow);
   justify-content: space-around;
-  margin: 40px 10px;
+  margin: 6% 2% 0% 2%;
   align-items: center;
-  height: 50vh;
+  min-height: 50vh;
   border: 2px double var(--borderColor);
 }
 
@@ -132,18 +133,19 @@ nav ul li a:hover {
 }
 
 .rightsection {
-  margin-right: 30px;
+  
+  margin: 3% auto;
   width: fit-content;
   border: 2px double var(--borderColor);
 }
 .rightsection img {
-   display: block;
-    border-radius: 50%;
-    margin: 5px 10px;
-    height: 320px;
-    width: 320px;
-    object-fit: cover;
-    border: 2px solid var(--borderColor);
+  display: block;
+  border-radius: 50%;
+  margin: 5px 10px;
+  height: 320px;
+  width: 320px;
+  object-fit: cover;
+  border: 2px solid var(--borderColor);
 }
 /* themes section */
 
@@ -193,11 +195,12 @@ nav ul li a:hover {
 }
 
 /* themes section */
+
 /* home section styles are END here  */
 
 /* ABOUT section styles are START here  */
 .about {
-  height: 30vh;
+  min-height: 20vh;
   text-align: justify;
   margin: 5px;
 }
@@ -233,13 +236,13 @@ nav ul li a:hover {
 /* education section styles START  */
 
 .education {
-  height: 30vh;
+  min-height: 30vh;
 }
 
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 90%;
   font-size: larger;
   margin: 1rem;
 }
@@ -251,8 +254,11 @@ th {
   padding: 8px;
 }
 .skills {
-  height: 20vh;
-  margin-top: 30px;
+  min-height: 10vh;
+  margin: auto;
+}
+.skills h2,p{
+  margin-left: 5%;
 }
 .languages {
   display: flex;
@@ -273,7 +279,6 @@ th {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 200px;
   background-color: var(--previewShadow);
 }
 .project {
@@ -283,7 +288,7 @@ th {
 }
 .project img {
   width: 35vw;
-  height: 35vh;
+  min-height: 35vh;
   align-items: center;
 }
 .project-des {
@@ -342,9 +347,9 @@ footer p {
   .home {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 23vh;
+    min-height: 23vh;
     grid-gap: 20px;
-    height: 73vh;
+    min-height: 73vh;
   }
   .leftsection {
     width: 100%;
@@ -352,26 +357,26 @@ footer p {
     text-align: center;
     font-size: 1.8rem;
   }
-  .rightsection{
-    margin:   auto;
+  .rightsection {
+    margin: auto;
   }
-  
+
   .text-container {
-  font-family: sans-serif;
-   display: inline-block;
-  margin: 0 auto;
-  padding: 3px;
-  font-size: 1.8rem;
-}
-.resume{
-  margin: auto;
-}
-.education{
-  margin: auto;
-}
+    font-family: sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 1.8rem;
+  }
+  .resume {
+    margin: auto;
+  }
+  .education {
+    margin: auto 100px;
+  }
   .projects {
     display: grid;
-    margin-top: 300px;
+    margin: auto;
   }
   .project,
   .project img {
