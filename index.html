@@ -21,7 +21,7 @@
 <body>
     <header>
         <nav class="sticky">
-            <div class="left">Phaneendra</div>
+            <div class="left"><a href="#">Phaneendra</a></div>
             <div class="right">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -30,18 +30,25 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="toggle-button">
+                    <i class="fa-solid fa-bars "></i>
+                </div>
+            </div>
+            <div class="dropdown-menu open">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </div>
         </nav>
     </header>
 
 
-
-
-
     <main>
         <section class="home" id="home">
             <div class="leftsection">Hello,I am Phaneendra
-                <div class="text-container">& i'm also a
+                <div class="text-container">& i'm a
                     <span id="text"></span>
                     <span class="cursor"></span>
                 </div>
@@ -191,8 +198,7 @@
                     <hr>
                     <p class="project-des">"weather-app" I also learned how to use an
                         API to get data from the internet.
-                        Here are some of the challenges I faced while building the website:
-
+                        Here are some of the challenges I faced while building the website.
                         Getting the weather data from the API was a bit challenging. I had to learn how to parse the
                         JSON data that the API
                         returned. Making the website responsive was also a challenge. I had to use CSS media queries to

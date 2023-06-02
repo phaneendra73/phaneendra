@@ -1,3 +1,12 @@
+// nav bar toggle feature
+const togglebtn= document.querySelector(".toggle-button")
+const togglebtnIcon = document.querySelector(".toggle-button i");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+togglebtn.onclick= function(){
+  dropdownMenu.classList.toggle('open')
+  const isOpen= dropdownMenu.classList.contains('open')
+  togglebtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+}
 // Text changing aimation
 const textElement = document.getElementById("text");
 const phrases = [
