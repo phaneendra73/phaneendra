@@ -25,7 +25,7 @@ h5,
 h6,
 strong {
   color: var(--mainText);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
 }
 hr {
@@ -37,7 +37,7 @@ hr {
 body {
   background-color: var(--mainColor);
   color: var(--secondaryText);
- font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   scroll-behavior: smooth;
 }
 /* nav bar styles are START here */
@@ -54,9 +54,8 @@ nav {
   top: 0;
 }
 
-
 nav .left {
-  color:var(--previewShadow);
+  color: var(--previewShadow);
   font-size: 1.5rem;
   font-weight: bold;
   margin-left: 30px;
@@ -72,29 +71,30 @@ nav ul li {
   margin: 0 2rem;
 }
 
-nav ul li a , .left>a{
+nav ul li a,
+.left > a {
   text-decoration: none;
   color: var(--previewShadow);
   font-weight: 700;
 }
 
-nav  a:hover {
+nav a:hover {
   scale: 1.05;
   color: var(--secondaryText);
 }
 
-.toggle-button{
+.toggle-button {
   color: var(--previewShadow);
   font-size: 1.8rem;
   cursor: pointer;
   display: none;
   margin-right: 6rem;
 }
-.dropdown-menu{
+.dropdown-menu {
   display: none;
-  position:absolute ;
+  position: absolute;
   right: 2rem;
-  top:60px ;
+  top: 60px;
   width: auto;
   height: 0;
   backdrop-filter: blur(15px);
@@ -102,23 +102,23 @@ nav  a:hover {
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.open{
+.open {
   height: auto;
 }
 .dropdown-menu li {
-   list-style: none;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 0.7rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem;
   margin: 0 2rem;
 }
-.dropdown-menu li a{
+.dropdown-menu li a {
   text-decoration: none;
   color: var(--secondaryColor);
   font-weight: 700;
 }
-.dropdown-menu  a:hover {
+.dropdown-menu a:hover {
   scale: 1.05;
 }
 
@@ -143,7 +143,7 @@ nav  a:hover {
 .text-container {
   display: inline-block;
   position: relative;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 30px;
 }
 
@@ -168,7 +168,6 @@ nav  a:hover {
 }
 
 .rightsection {
-  
   margin: 3% auto;
   width: fit-content;
   border: 2px double var(--borderColor);
@@ -240,7 +239,7 @@ nav  a:hover {
   margin: 5px;
 }
 .abouttext {
-  margin:1.5em;
+  margin: 1.5em;
   border-radius: 13px;
   padding: 10px;
   background-color: var(--previewShadow);
@@ -275,7 +274,7 @@ nav  a:hover {
 }
 
 table {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   border-collapse: collapse;
   width: 90%;
   font-size: larger;
@@ -292,7 +291,8 @@ th {
   min-height: 10vh;
   margin: auto;
 }
-.skills h2,p{
+.skills h2,
+p {
   margin-left: 5%;
 }
 .languages {
@@ -348,6 +348,11 @@ th {
   border-radius: 0%;
 }
 /* projects section styles END  */
+.contact{
+  display: grid;
+  justify-content: center;
+  margin: auto;
+}
 
 
 footer {
@@ -380,7 +385,6 @@ footer p {
 }
 
 @media (max-width: 600px) {
- 
   .home {
     display: grid;
     grid-template-columns: 1fr;
@@ -423,14 +427,13 @@ footer p {
 }
 
 @media (max-width: 773px) {
- nav .right ul{
+  nav .right ul {
     display: none;
   }
- .toggle-button{
-  display: block;
-
- }
- .dropdown-menu{
-  display: block;
- }
+  .toggle-button {
+    display: block;
+  }
+  .dropdown-menu {
+    display: block;
+  }
 }
