@@ -348,13 +348,37 @@ p {
   border-radius: 0%;
 }
 /* projects section styles END  */
-.contact{
-  display: grid;
-  justify-content: center;
-  margin: auto;
+
+.input {
+  background-color:var(--secondaryColor);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  color: var(--secondaryText);
+  width: 70%;
+  color:#a9ff1c;
+  
 }
-
-
+::placeholder { 
+ color: black;
+  opacity: 1;
+}
+.submit {
+  color: black;
+  font-size: medium;
+  width: 150px;
+  border-radius: 13px;
+  background-color: var(--buttonColor);
+  text-decoration: none;
+  padding: 5px 5px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+ 
+}
 footer {
   background-color: var(--previewBg);
   padding: 20px;
