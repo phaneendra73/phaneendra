@@ -1,8 +1,9 @@
 function openGmailCompose() {
   window.open(
-    "https://mail.google.com/mail/?view=cm&to=phaneendra3377@gmail.com","_blank"
+    "https://mail.google.com/mail/?view=cm&to=phaneendra3377@gmail.com",
+    "_blank"
   );
-} 
+}
 // nav bar toggle feature
 const togglebtn = document.querySelector(".toggle-button");
 const togglebtnIcon = document.querySelector(".toggle-button i");
@@ -92,6 +93,16 @@ function setTheme(mode) {
   localStorage.setItem("theme", mode);
 }
 
-src = "https://smtpjs.com/v3/smtp.js" > function sendEmail() {
-  
-};
+src =
+  "https://smtpjs.com/v3/smtp.js" >
+  function sendEmail() {
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "username",
+      Password: "password",
+      To: "them@website.com",
+      From: "you@isp.com",
+      Subject: "This is the subject",
+      Body: "And this is the body",
+    }).then((message) => alert(message));
+  };
