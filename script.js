@@ -98,10 +98,10 @@ src =
   function sendEmail() {
     Email.send({
       Host: "smtp.elasticemail.com",
-      Username: "username",
+      Username: "phaneendra3377@gmail.com",
       Password: "password",
-      To: "them@website.com",
-      From: "you@isp.com",
+      To: "phaneendra3377@gmail.com",
+      From: "phaneendra3377@gmail.com",
       Subject: "This is the subject",
       Body: "And this is the body",
     }).then((message) => alert(message));
