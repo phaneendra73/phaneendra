@@ -349,36 +349,47 @@ p {
 }
 /* projects section styles END  */
 
-.input {
-  background-color:var(--secondaryColor);
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 16px;
-    margin-bottom: 16px;
-  color: var(--secondaryText);
-  width: 70%;
-  color:#a9ff1c;
+ .containercon{
+    display: grid;
+    place-items: center;
+
+ }
+ .main{
+   display: grid;
+  place-items: center;
+   background-color:var(--previewShadow); 
+   width: 90%;
+   min-height: 55vh;
+   border-radius: 10px;
+ }
+ form{
+  width: 350px;
+  height: 400px;  
+ }
+
+ form label{
+    color: var(--mainText);
+ }
+ .form-input{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 50px;
   
-}
-::placeholder { 
- color: black;
-  opacity: 1;
-}
-.submit {
-  color: black;
-  font-size: medium;
-  width: 150px;
-  border-radius: 13px;
-  background-color: var(--buttonColor);
-  text-decoration: none;
-  padding: 5px 5px;
-  margin: 10px;
-  text-align: center;
-  cursor: pointer;
- 
-}
+ }
+ input , textarea{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: var(--buttonColor);
+ }
+
+ .form-input button{
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--buttonColor);
+ }
 footer {
   background-color: var(--previewBg);
   padding: 20px;

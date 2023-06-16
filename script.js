@@ -93,8 +93,7 @@ function setTheme(mode) {
   localStorage.setItem("theme", mode);
 }
 
-src =
-  "https://smtpjs.com/v3/smtp.js" >
+
   function sendEmail() {
     Email.send({
       Host: "smtp.elasticemail.com",
