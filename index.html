@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="docs/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous">
@@ -55,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="rightsection">
+            <div class="rightsection" data-aos="slide-left" >
                 <img id="profile-pic" src="./docs/img.png">
                 <h5 class="chg-theme">CHANGE THEME</h5>
                 <div id="theme-options-wrapper">
@@ -84,7 +85,7 @@
 
         <section class="education" id="education">
 
-            <div class="center-div">
+            <div class="center-div" data-aos="slide-left">
                 <table>
                     <tr>
                         <th>Education Qualification</th>
@@ -117,7 +118,7 @@
 
             <h2>Skills, Languages & Tools</h2>
             <p>Below are the domains in which I'm profoundly skilled and ready to work</p>
-            <div class="languages">
+            <div class="languages" data-aos="zoom-in" >
                 <ul>
                     <li>C++</li>
                     <li>C</li>
@@ -141,8 +142,7 @@
 
         <section>
             <div class="projects" id="projects">
-                <div class="project"><img
-                        src="https://user-images.githubusercontent.com/118047850/233824675-6c6423f7-4402-46a1-b8f4-71c7c74c1f93.png"
+                <div class="project" data-aos="flip-up"><img src="https://user-images.githubusercontent.com/118047850/233824675-6c6423f7-4402-46a1-b8f4-71c7c74c1f93.png"
                         alt="math the cards site">
                     <hr>
                     <p class="project-des">I built this project using HTML, CSS, and JavaScript, and I'm really happy
@@ -157,7 +157,7 @@
                             Git</a>
                     </div>
                 </div>
-                <div class="project"><img
+                <div class="project" data-aos="flip-up"><img
                         src="https://user-images.githubusercontent.com/118047850/234286712-bff67eb5-5f0b-49d5-bfb7-db558cebfa60.png"
                         alt="math the cards site">
                     <hr>
@@ -174,7 +174,7 @@
                     </div>
                 </div>
 
-                <div class="project"><img
+                <div class="project" data-aos="flip-up"><img
                         src="https://user-images.githubusercontent.com/118047850/240611151-5e976b7d-85e0-42c1-9f00-7cca1fc5c4a6.png"
                         alt="math the cards site">
                     <hr>
@@ -191,7 +191,7 @@
 
                 </div>
 
-                <div class="project"><img
+                <div class="project" data-aos="flip-up"><img
                         src="https://user-images.githubusercontent.com/118047850/242651552-f9e98f0c-a63e-4ce5-a4f5-2d9a1da9527d.png"
                         alt="weathear api site pic">
                     <hr>
@@ -220,31 +220,31 @@
                 <h1>My inbox is always open<br>
                     Let's Collaborate and Build!</h1>
 
-                <div class="main">
+                <div class="main" data-aos="flip-down">
                     <form action="">
 
                         <div class="form-input">
-                            <label for="">Name</label><br>
-                            <input type="text" id="name">
+                            <label for="name" >Name</label><br>
+                            <input type="text" id="name" autocomplete="off">
                         </div>
 
                         <div class="form-input">
-                            <label for="">Email</label><br>
-                            <input type="text" id="email">
+                            <label for="email" >Email</label><br>
+                            <input type="text" id="email" autocomplete="off">
                         </div>
 
                         <div class="form-input">
-                            <label for="">Contact Number</label><br>
+                            <label for="contact">Contact Number</label><br>
                             <input type="text" id="contact">
                         </div>
 
                         <div class="form-input">
-                            <label for="">Subject</label><br>
+                            <label for="subject">Subject</label><br>
                             <input type="text" id="subject">
                         </div>
 
                         <div class="form-input">
-                            <label for="">Messages</label><br>
+                            <label for="message">Messages</label><br>
                             <textarea name="" id="message" cols="31" rows="4" place></textarea>
                         </div>
 
@@ -276,33 +276,10 @@
     </main>
 </body>
 <script src="script.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    function SendEmail() {
-
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-        let conatact = document.getElementById("contact").value;
-        let subject = document.getElementById("subject").value;
-        let message = document.getElementById("message").value;
-
-        let body = "Name:" + name + "<br/> Email:" + email + "<br/> Contact Number:" + conatact + "<br/> Subject:" + subject + "<br/> Messages:" + message;
-
-        Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "phaneendra3377@gmail.com",
-            Password: "757136BF5784AF1472E0A93F200686E66D49",
-            To: "phaneendra3377@gmail.com",
-            From: "phaneendra3377@gmail.com",
-            Subject: "portfolio site contact form",
-            Body: body,
-        }).then(
-            message => alert("Thank you for reaching out to me 📧 . I will contact you 🔜."));
-
-    }
+    AOS.init();
 </script>
 
 </html>

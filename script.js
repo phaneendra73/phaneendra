@@ -93,4 +93,34 @@ function setTheme(mode) {
   localStorage.setItem("theme", mode);
 }
 
+  function SendEmail() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let conatact = document.getElementById("contact").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
 
+    let body =
+      "Name:" +
+      name +
+      "<br/> Email:" +
+      email +
+      "<br/> Contact Number:" +
+      conatact +
+      "<br/> Subject:" +
+      subject +
+      "<br/> Messages:" +
+      message;
+
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "phaneendra3377@gmail.com",
+      Password: "757136BF5784AF1472E0A93F200686E66D49",
+      To: "phaneendra3377@gmail.com",
+      From: "phaneendra3377@gmail.com",
+      Subject: "portfolio site contact form",
+      Body: body,
+    }).then((message) =>
+      alert("Thank you for reaching out to me 📧 . I will contact you 🔜.")
+    );
+  }
