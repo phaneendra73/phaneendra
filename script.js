@@ -94,14 +94,3 @@ function setTheme(mode) {
 }
 
 
-  function sendEmail() {
-    Email.send({
-      Host: "smtp.elasticemail.com",
-      Username: "phaneendra3377@gmail.com",
-      Password: "757136BF5784AF1472E0A93F200686E66D49",
-      To: "phaneendra3377@gmail.com",
-      From: "phaneendra3377@gmail.com",
-      Subject: "This is the subject",
-      Body: "And this is the body",
-    }).then((message) => alert(message));
-  };

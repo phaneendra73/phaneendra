@@ -379,6 +379,8 @@ p {
  input , textarea{
     width: 90%;
     height: 30px;
+    font-size: medium;
+    color: var(--mainText);
     border-radius: 10px;
     background-color: var(--buttonColor);
  }
@@ -387,6 +389,7 @@ p {
     width: 120px;
     height: 30px;
     font-size: 20px;
+    border-radius: 10px;
     cursor: pointer;
     background-color: var(--buttonColor);
  }

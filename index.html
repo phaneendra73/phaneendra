@@ -29,7 +29,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-sec">Contact</a></li>
                 </ul>
                 <div class="toggle-button">
                     <i class="fa-solid fa-bars "></i>
@@ -40,7 +40,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact-sec">Contact</a></li>
             </div>
         </nav>
     </header>
@@ -139,8 +139,6 @@
 
 
 
-
-
         <section>
             <div class="projects" id="projects">
                 <div class="project"><img
@@ -218,46 +216,47 @@
 
         <!-- <button  class="resume" onclick="openGmailCompose()">Contact me</button> -->
         <section id="contact-sec">
-<div class="containercon">
-    <h1>Working Contact From</h1>
+            <div class="containercon">
+                <h1>My inbox is always open<br>
+                    Let's Collaborate and Build!</h1>
 
-    <div class="main">
-        <form action="">
+                <div class="main">
+                    <form action="">
 
-            <div class="form-input">
-                <label for="">Name</label><br>
-                <input type="text" id="name">
+                        <div class="form-input">
+                            <label for="">Name</label><br>
+                            <input type="text" id="name">
+                        </div>
+
+                        <div class="form-input">
+                            <label for="">Email</label><br>
+                            <input type="text" id="email">
+                        </div>
+
+                        <div class="form-input">
+                            <label for="">Contact Number</label><br>
+                            <input type="text" id="contact">
+                        </div>
+
+                        <div class="form-input">
+                            <label for="">Subject</label><br>
+                            <input type="text" id="subject">
+                        </div>
+
+                        <div class="form-input">
+                            <label for="">Messages</label><br>
+                            <textarea name="" id="message" cols="31" rows="4" place></textarea>
+                        </div>
+
+                        <div class="form-input">
+                            <button type="button" onclick="SendEmail()"> Send Email</button>
+                        </div>
+
+                    </form>
+
+                </div>
+                <!-- end main class -->
             </div>
-
-            <div class="form-input">
-                <label for="">Email</label><br>
-                <input type="text"  id="email">
-            </div>
-
-            <div class="form-input">
-                <label for="">Contact Number</label><br>
-                <input type="text"  id="contact">
-            </div>
-
-            <div class="form-input">
-                <label for="">Subject</label><br>
-                <input type="text"  id="subject">
-            </div>
-
-            <div class="form-input">
-                <label for="">Messages</label><br>
-                <textarea name=""   id="message" cols="31" rows="4" place></textarea>
-            </div>
-
-            <div class="form-input">
-                <button type="button" onclick="SendEmail()"> Send Email</button>
-            </div>
-
-        </form>
-
-    </div>
-    <!-- end main class -->
-</div>
         </section>
 
 
@@ -277,32 +276,33 @@
     </main>
 </body>
 <script src="script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"> </script>
-    
-    
-    <script>
-        function SendEmail() {
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let conatact = document.getElementById("contact").value;
-            let subject = document.getElementById("subject").value;
-            let message = document.getElementById("message").value;
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 
-            let body = "Name:" + name + "<br/> Email:" + email + "<br/> Contact Number:" + conatact + "<br/> Subject:" + subject + "<br/> Messages:" + message;
 
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "phaneendra3377@gmail.com",
-                Password: "757136BF5784AF1472E0A93F200686E66D49",
-                To: "phaneendra3377@gmail.com",
-                From: "phaneendra3377@gmail.com",
-                Subject: "This is the subject",
-                Body: "And this is the body",
-            }).then(
-                message => alert(message)
-            );
+<script>
+    function SendEmail() {
 
-        }
-    </script>
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let conatact = document.getElementById("contact").value;
+        let subject = document.getElementById("subject").value;
+        let message = document.getElementById("message").value;
+
+        let body = "Name:" + name + "<br/> Email:" + email + "<br/> Contact Number:" + conatact + "<br/> Subject:" + subject + "<br/> Messages:" + message;
+
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "phaneendra3377@gmail.com",
+            Password: "757136BF5784AF1472E0A93F200686E66D49",
+            To: "phaneendra3377@gmail.com",
+            From: "phaneendra3377@gmail.com",
+            Subject: "portfolio site contact form",
+            Body: body,
+        }).then(
+            message => alert("Thank you for reaching out to me 📧 . I will contact you 🔜."));
+
+    }
+</script>
 
 </html>
